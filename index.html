@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SignUp Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer ></script>
-</head>
-<body>
-    <main class="content">
-        <div class="form-container">
-            <h1 class="form-header">Sign Up</h1>
-            <p class="header-p">Fill in the form below to create an account</p>
-        </div>
-        <form class="form" action="#" method="get">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up</title>
+        <link rel="icon" href="/img/odin-lined.png" type="image/icon type">
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<main class="content">
+			<div class="form-container">
+				<h1 class="form-header">Sign Up</h1>
+				<p class="header-p">
+					Fill in the form below to create an account
+				</p>
+			</div>
+			<!-- NEED TO ADD THIS PER INSTRUCTIONS -->
+			<!-- <div class="form-block__para-container">
+                <p>This is a demo registration page! You know you need something like this in your life to help you
+                    realize your deepest dreams. Sign up <i>now</i> to get started. <br><br> You know you want to.</p>
+            </div> -->
+			<form class="form" action="#" method="get">
+				<div>
+					<label for="first_name">First Name</label>
+					<br />
+					<input
+						type="text"
+						name="first_name"
+						id="first_name"
+						placeholder="Enter your first name"
+						required
+					/>
+				</div>
 
-            <div>
-                <label for="first_name">First Name:</label>
-                <br>
-                <input type="text" name="first_name" id="first_name" placeholder="Enter your first name" required>
-            </div>
-            
-            <div>
-                <label for="last_name">Last Name:</label>
-                <br>
-                <input type="text" name="last_name" id="last_name" placeholder="Enter your last name" required>
-            </div>
-            
-            <div>
-                <label for="email">Email:</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Enter your email" required>
-            </div>
-            
-            <div>
-                <label for="password">Password:</label>
-                <br>
-                <input type="password" name="password" id="password" placeholder="Enter your password" required>
-            </div>
-           
-            <div>
-                <label for="confirm_password">Confirm Password:</label>
-                <br>
-                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm your password" required>
-            </div>
+				<div>
+					<label for="last_name">Last Name</label>
+					<br />
+					<input
+						type="text"
+						name="last_name"
+						id="last_name"
+						placeholder="Enter your last name"
+						required
+					/>
+				</div>
 
-            <div>
-                <input class="btn" type="submit" value="Sign Up">
-            </div>
+				<div>
+					<label for="email">Email</label>
+					<br />
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter your email"
+						required
+					/>
+				</div>
 
-            <p class="paragraph">Already have an account? <a href="login.html">Login</a></p>
-        </form>
-        <footer>
-            <p>&copy; 2023 Created by <a href="https://www.linkedin.com/in/lisachampagne">Lisa</a></p>
-        </footer>
-    </main>
-</body>
+				<div>
+					<label for="password">Password</label>
+					<br />
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="Enter your password"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="confirm_password">Confirm Password</label>
+                    <br>
+					<input
+						type="password"
+						name="confirm_password"
+						id="confirm_password"
+						placeholder="Confirm your password"
+						required
+					/>
+				</div>
+
+				<div>
+					<input class="btn" type="submit" value="Sign Up" />
+				</div>
+
+				<p class="paragraph">
+					Already have an account?
+					<a href="login.html"> Login </a>
+				</p>
+			</form>
+			<footer class="footer">
+				<p>
+					&copy; 2023 Created by
+					<a href="https://www.linkedin.com/in/lisachampagne">Lisa</a>
+				</p>
+			</footer>
+		</main>
+	</body>
 </html>
